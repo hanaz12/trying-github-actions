@@ -1,1 +1,17 @@
+on:
+  push:
+    branches:
+      - master
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Testing Actions of GitHub'
+        run: pwd
+
+      - name: ' Printing  Name'
+        run: echo 'Hana Shaker'
+
+      
