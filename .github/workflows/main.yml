@@ -14,4 +14,11 @@ jobs:
       - name: ' Printing  Name'
         run: echo 'Hana Shaker'
 
-      
+      - name: 'Printing File Content Before '
+        run: ls
+
+      - name: 'Checkout code'
+        uses: actions/checkout@v3
+
+      - name: 'Printing File Content After '
+        run: ls  
