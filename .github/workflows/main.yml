@@ -21,4 +21,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: 'Printing File Content After '
-        run: ls  
+        run: ls 
+
+      - name: "Login to Docker Hub"
+        run: docker login --username ${{ secrets.DOCKERUSERNAME }} --password ${{ secrets.DOCKERTOKEN }}   
